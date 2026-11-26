@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>aaa — Personal Automation Tool</title>
+<meta name="description" content="aaa is a private, single-user automation utility that connects to Google APIs with the owner's own Google Account.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 64px 24px; min-height: 100vh;
+    font: 16px/1.7 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", sans-serif;
+    background: #0b0d10; color: #e6e9ef;
+    display: flex; justify-content: center;
+  }
+  main { max-width: 680px; width: 100%; }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: -.02em; }
+  .sub { color: #8b95a7; margin: 0 0 40px; font-size: 15px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .09em;
+       color: #6f7b8f; margin: 34px 0 10px; font-weight: 600; }
+  p, li { color: #c3cad6; margin: 0 0 10px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  a { color: #6ea8fe; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card { border: 1px solid #1e242d; border-radius: 12px; padding: 24px 24px 8px; background: #10141a; }
+  .badge { display: inline-block; font-size: 12px; letter-spacing: .04em;
+           padding: 3px 9px; border-radius: 999px; border: 1px solid #2a3140;
+           color: #8b95a7; margin-bottom: 18px; }
+  footer { margin-top: 44px; color: #5c6678; font-size: 13px;
+           border-top: 1px solid #1a2029; padding-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>aaa</h1>
+  <p class="sub">A personal, single-user automation tool.</p>
+  <span class="badge">Private utility · not a public service</span>
+
+  <div class="card">
+    <h2>What this app does</h2>
+    <p>
+      aaa is a private automation utility built and used by one person,
+      <strong>ahuaiab</strong>. It connects to Google APIs with the owner's own
+      Google Account to automate repetitive personal tasks: reading and
+      organising the owner's own data, summarising it, and writing results
+      back to the owner's own account.
+    </p>
+
+    <h2>Google user data</h2>
+    <p>
+      The app requests only the OAuth scopes displayed on Google's consent
+      screen when the owner authorises it, and uses them solely for the
+      functions the owner requests. No Google user data is shared with,
+      sold to, or readable by any third party — see the
+      <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <h2>Who can use it</h2>
+    <p>
+      Only the owner. There is no sign-up, no multi-user access, and no data
+      belonging to anyone other than the owner is ever accessed.
+    </p>
+
+    <h2>How data is handled</h2>
+    <p>
+      OAuth tokens are stored locally on the owner's own machine. No data is
+      transmitted to any third-party server. Access can be revoked at any time
+      at
+      <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:us@ahuaiab.com">us@ahuaiab.com</a> ·
+      <a href="https://github.com/ahuaiab" rel="noopener">github.com/ahuaiab</a>
+    </p>
+  </div>
+
+  <footer>
+    &copy; <span id="y">2026</span> ahuaiab ·
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="mailto:us@ahuaiab.com">Contact</a>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
